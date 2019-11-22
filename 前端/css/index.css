@@ -1,0 +1,31 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+}
+li{
+    list-style:none
+}
+img{
+    vertical-align:top;
+    border:none
+}
+a{
+    text-decoration: none;
+}
+/* 清楚默认样式 end */
+/* main-background start */
+.main{
+    width: 100%;
+    height: 79rem;
+    /* background-image: url(/image/login1.jpg); */
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    }
+/* main-background end */
