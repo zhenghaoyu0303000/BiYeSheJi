@@ -4,9 +4,13 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
 }
 html{
     font-size: 10px;
+    height: 100%;
+    width: 100%;
 }
 body{
     font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
 }
 li{
     list-style:none
@@ -17,15 +21,122 @@ img{
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 /* 清楚默认样式 end */
 /* main-background start */
 .main{
     width: 100%;
-    height: 79rem;
-    /* background-image: url(/image/login1.jpg); */
+    height: 100%;
+    background-image: url(/image/index/0.jpg);
     background-repeat: no-repeat;
     background-size:100% 100%;
     -moz-background-size:100% 100%;
+    display: flex;
+    /* display: -webkit-flex; */
+    justify-content: center;
+    align-items: center;
     }
 /* main-background end */
+/* menu start */
+.main #menu{
+    width: 50rem;
+    height: 50rem;
+    /* display: -webkit-inline-flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+/* ico start */
+.main #menu #topico{
+    height: 10rem;
+    width: 10rem;
+    border: 0.5rem solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    margin-left: -5rem;
+}
+/* ico end */
+/* img start */
+.main #menu #topico img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2rem;
+    margin-top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    opacity:0.7;//透明度
+    filter:alpha(opacity=70);//兼容
+}
+/* img end */
+/* 竖线 start */
+.main #menu #topico::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% + 5.2rem);
+    left: calc(50% - 1px);
+    width:5px;
+    height: calc(5rem + 1px);
+    background: #ffffff;
+}
+/* 竖线 end */
+/* 一言 start */
+.main #menu #yiyan{
+    width: 40rem;
+    height: 13rem;
+    line-height: 13rem;
+    text-align: center;
+    position: absolute;
+    top: calc(50%);
+    left: calc(50% - 20rem);
+    margin-top: -8.35rem;
+    /* padding-bottom: 5rem; */
+    border-top: 0.2rem solid #ffffff;
+    border-bottom: 0.2rem solid #ffffff;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 一言 end */
+/* 竖线 start */
+.main #menu #yiyan::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% + 6.74rem);
+    left: calc(50% - 1px);
+    width:5px;
+    height: calc(5rem + 1px);
+    background: #ffffff;
+}
+/* 竖线 end */
+/* 标签 start */
+.main #menu ul{
+    position: relative;
+    width: 20rem;
+    height: 5rem;
+}
+.main #menu ul a li{
+    height: 5rem;
+    width: 10rem;
+    border: 0.2rem solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 700%;
+    color: #ffffff;
+}
+.main #menu ul a #login{
+    left: calc(100% + 5rem);
+}
+.main #menu ul a #zhuce{
+    left: calc(100% - 5rem);
+}
+/* 标签 end */
+/* menu end */
