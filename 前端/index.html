@@ -1,12 +1,15 @@
 <!--
  * @Author: 冰彦糖
  * @Date: 2019-11-22 09:14:07
- * @LastEditTime: 2019-11-25 00:40:06
- * @LastEditors: 冰彦糖
- * @Description: In User Settings Edi
+ * @LastEditTime: 2019-11-26 17:13:28
+ * @LastEditors: Please set LastEditors
+ * @Description: 首页
  * @FilePath: \前端\index.html
  -->
 <!DOCTYPE html>
+<!--[if lte IE 8]>
+       <h1 class="red">您的浏览器版本过低，IE8及以下版本不支持新样式，请更新浏览器</h1>
+<![endif]-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,6 +22,7 @@
     <!-- <meta name="renderer" content="webkit" /> -->
     <title>LOL资料库</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="sty;esheet" href="css/test.css"> -->
 </head>
 <body>
@@ -27,16 +31,19 @@
             <div id="topico">
                 <img src="image/index/leagueoflegends.png" alt="">
             </div>
-            <div id="yiyan">
-                <span id="yiyan">
-                    
-                </span>
+            <div id="yy">
+                <div id="bt">
+                    <h1>LOL资料站</h1>
+                </div>
+                <div id="yiyan">
+                    <span></span>
+                </div>
             </div>
             <div class="login">
                 <ul>
                     <a href="page/login.html">
                         <li id="login">
-                        登录
+                            登录
                         </li>
                     </a>
                     <a href="page/zhuce.html">
@@ -46,6 +53,9 @@
                     </a>
                 </ul>
             </div>
+        </div>
+        <div class="bottom">
+            @冰彦糖
         </div>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
