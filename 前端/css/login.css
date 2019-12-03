@@ -1,15 +1,129 @@
 .main{
     width: 100%;
-    background: url("/image/login/login.jpg");
+    height: 100%;
+    background: url("/image/login/login1.jpg");
     background-repeat: no-repeat;
     background-size:100% 100%;
     -moz-background-size:100% 100%;
     -webkit-background-size: 100% 100%;
     -o-background-size: 100% 100%;
 }
-.main .from .head{
-    color: #ffffff;
+.main .from{
+    background-color: #eee;
+    width: 30rem;
+    height: 50%;
+    position: relative;
+    top: calc(50% - 25%);
+    left: 50%;
+    margin-left: -15rem;
+	text-align: center;
+	
 }
+.main .from .head{
+	font-size: 3rem;
+}
+.main .from .bd{
+	margin-top: 5rem;
+	position: relative;
+}
+.main .from .bd input{
+	width: 20rem;
+	height: 3rem;
+	position: absolute;
+	margin-left: -10rem;
+	outline:none;
+	padding-top: 1rem;
+	padding-left: 0.8rem;
+	border: none;
+}
+.main .from .bd label{
+	position: absolute;
+}
+.main .from .bd .label_input_user{
+	margin-top: -1rem;
+	margin-left: -9rem;
+}
+.main .from .bd .label_input_pwd{
+	margin-left: -9rem;
+	margin-top: 3rem;
+}
+.main .from .bd .input_user{
+	top: -2rem;
+}
+.main .from .bd .input_pwd{
+	top: 4rem;
+	padding-left: 0.8rem;
+}
+.main .from .bd input:focus{
+	border: 0.2rem solid #000;
+}
+.main .from .bd .input_user:focus+.label_input_user{
+	font-size: 1.2rem;
+	animation: input_1 1s forwards;
+	-moz-animation: input_1 1s forwards;	/* Firefox */
+	-webkit-animation: input_1 1s forwards;	/* Safari 和 Chrome */
+	-o-animation: input_1 1s forwards;	/* Opera */
+	font-weight: bolder;
+}
+.main .from .bd .input_pwd:focus+.pwd{
+	font-size: 1.2rem;
+	animation: input_1 1s forwards;
+	-moz-animation: input_1 1s forwards;	/* Firefox */
+	-webkit-animation: input_1 1s forwards;	/* Safari 和 Chrome */
+	-o-animation: input_1 1s forwards;	/* Opera */
+	font-weight: bolder;
+}
+.main .from .bd #login{
+	width: 8rem;
+	height: 8rem;
+	margin-left: -4rem;
+	top: 12rem;
+	border: 0.1rem solid #ccc;
+	border-radius: 1.5rem;
+	cursor: pointer;
+}
+.main .from .bottom{
+	position: relative;
+	left: 0.6rem;
+	top: 20rem;
+}
+@-webkit-keyframes input_1 {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(1em,0,0);
+		transform: translate3d(1em,0,0)
+	}
+
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-1em,-40%,0);
+		transform: translate3d(-1em,-40%,0)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0,-40%,0);
+		transform: translate3d(0,-40%,0)
+	}
+}
+
+@keyframes input_1 {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(1em,0,0);
+		transform: translate3d(1em,0,0)
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-1em,-40%,0);
+		transform: translate3d(-1em,-40%,0)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0,-40%,0);
+		transform: translate3d(0,-40%,0)
+	}
+
 #login{
     width: 100px;
     height: 100px;
