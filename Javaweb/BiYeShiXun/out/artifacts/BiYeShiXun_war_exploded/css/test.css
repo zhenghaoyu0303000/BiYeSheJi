@@ -1,0 +1,21 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style:none
+}
+img{
+    vertical-align:top;
+    border:none
+}
+a{
+    text-decoration: none;
+}
+/* 清楚默认样式 end */
+/* main-background start */
+.main{
+    width: 200px;
+    height: 200px;
+    }
+/* main-background end */
