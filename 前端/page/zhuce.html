@@ -1,57 +1,60 @@
 <!--
  * @Author: 冰彦糖
  * @Date: 2019-11-22 09:14:07
- * @LastEditTime: 2019-11-29 11:58:19
+ * @LastEditTime: 2019-12-13 16:57:30
  * @LastEditors: Please set LastEditors
  * @Description: 登录页面
  * @FilePath: \前端\page\login.html
  -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>登录</title>
-     <link rel="stylesheet" href="/css/login.css">
-     <link rel="stylesheet" href="/css/style.css">
- </head>
- <body>
-     <!-- <div> -->
- 
-     <!-- </div> -->
-     <div class="main">
-         <div class="from">
-             <div class="head">
-                 <h2>注册</h2>
-             </div>
-             <div class="bd">
-                 <form action="" method="post">
-                     <input class="input_user num num3" type="text" id="input_user">
-                     <label class="label_input_user" for="input_user">
-                         <span class="username">用户名</span>
-                     </label>
-                     <br>
-                     <input class="input_pwd" type="password" id="input_pwd">
-                     <label class="label_input_pwd pwd" for="input_pwd">
-                         <span class="pwd">密码</span>
-                     </label>
-                     <!-- 验证码: //可选 -->
-                     <input type="submit" name="login" value="" id="login" title="登录">
-                 </form>
-             </div>
-             <div class="bottom">
-                     <a href="/page/login.html">已经有账户了？</a>
-                     <br>
-                 <!-- @冰彦糖 -->
-             </div>
-         </div>
-     </div>
-     <!-- <div> -->
- 
-     <!-- </div> -->
-     <script src="/js/jquery-3.4.1.min.js"></script>
-     <script src="/js/tools.js"></script>
-     <script src="/js/login.js"></script>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- <div> -->
+
+    <!-- </div> -->
+    <div class="main">
+        <div class="from">
+            <div class="head">
+                <h2>注册</h2>
+            </div>
+            <div class="bd">
+                <form action="" method="post">
+                    <input class="input_user" type="text" id="input_user" onchange="isuser()">
+                    <label class="label_input_user" for="input_user">
+                        <span class="username">用户名</span>
+                    </label>
+                    <br>
+                    <input class="input_pwd" type="password" id="input_pwd" onchange="ispwd()">
+                    <label class="label_input_pwd pwd" for="input_pwd">
+                        <span class="pwd">密码</span>
+                    </label>
+                    <!-- 验证码: //可选 -->
+                    <input type="submit" name="login" value="" id="login" title="登录">
+                </form>
+            </div>
+            <div class="bottom">
+                <a href="/page/login.html">已经有账户了？</a>
+                <br>
+                <!-- @冰彦糖 -->
+            </div>
+        </div>
+    </div>
+    <!-- <div> -->
+
+    <!-- </div> -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/tools.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

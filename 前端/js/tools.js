@@ -1,16 +1,16 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2019-11-27 10:22:39
- * @LastEditTime: 2019-12-12 19:56:27
+ * @LastEditTime: 2019-12-13 16:52:44
  * @LastEditors: Please set LastEditors
  * @Description: tools
  * @FilePath: \前端\js\tools.js
  */
 function updatebgc() {
-    if (window.innerHeight < screen.height * 1) {
+    if (document.documentElement.clientHeight < screen.height * 0.9) {
         $(".main")[0].style.height = screen.height/10 + "rem";
     } else {
-        $(".main")[0].style.height = window.innerHeight/10 + "rem";//window.innerHeight
+        $(".main")[0].style.height = document.documentElement.clientHeight/10 + "rem";
     }
     // if (document.documentElement.clientWidth < screen.width * 0.9) {
     //     $(".main")[0].style.width = screen.width/10 + "rem";

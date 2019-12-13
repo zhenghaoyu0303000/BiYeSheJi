@@ -1,16 +1,18 @@
 /*
  * @Author: 冰彦糖
  * @Date: 2019-11-22 09:15:49
- * @LastEditTime: 2019-11-27 10:36:25
+ * @LastEditTime: 2019-12-13 16:52:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \前端\js\index.js
  */
 //const
 (window.onload = function() {
-    yiyan();
-    this.bgc();
+    // yiyan();
+    // this.bgc();
 })()
+yiyan();
+this.bgc();
 $(".main")[0].style.height = document.documentElement.clientHeight + "px";
 window.onresize = function() {//窗口变化
     updatebgc();

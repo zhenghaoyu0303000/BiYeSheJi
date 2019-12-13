@@ -1,7 +1,7 @@
 <!--
  * @Author: 冰彦糖
  * @Date: 2019-11-22 09:14:07
- * @LastEditTime: 2019-11-29 11:36:12
+ * @LastEditTime: 2019-12-13 16:55:40
  * @LastEditors: Please set LastEditors
  * @Description: 登录页面
  * @FilePath: \前端\page\login.html
@@ -27,12 +27,12 @@
             </div>
             <div class="bd">
                 <form action="/login" method="post">
-                    <input class="input_user num num3" type="text" id="input_user" name="username">
+                    <input class="input_user" type="text" id="input_user" name="username" onchange="isuser()">
                     <label class="label_input_user" for="input_user">
                         <span class="username">用户名</span>
                     </label>
                     <br>
-                    <input class="input_pwd" type="password" id="input_pwd" name="password">
+                    <input class="input_pwd" type="password" id="input_pwd" name="password" onchange="ispwd()">
                     <label class="label_input_pwd pwd" for="input_pwd">
                         <span class="pwd">密码</span>
                     </label>
