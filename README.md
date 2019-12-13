@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-12-12 18:46:44
+ * @LastEditTime: 2019-12-13 08:51:39
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \前端d:\Github\BiYeSheJi\README.md
+ -->
 # LOL资料库
 ## 数据库
 英雄资料表  
@@ -25,5 +33,10 @@
     用户查询： 
         用户信息查询：  
 
-### 技术瓶颈
-多语言融合
+
+
+### 前端正则表达式
+用户名：六位至十二位字母+数字 注：首位必须字母  
+密码：  八位至二十位 大小写+数字，注：可加符号
+### 后端验证
+用户名是否存在，  用户名的密码哈希是否相等
