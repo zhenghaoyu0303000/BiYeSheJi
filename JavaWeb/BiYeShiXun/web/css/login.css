@@ -1,0 +1,132 @@
+.main{
+    width: 100%;
+    height: 100%;
+    background: url("/image/login/login1.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+.main .from{
+    background-color: #eee;
+    width: 30rem;
+    height: 50%;
+    position: relative;
+    top: calc(50% - 25%);
+    left: 50%;
+    margin-left: -15rem;
+	text-align: center;
+	
+}
+.main .from .head{
+	font-size: 3rem;
+}
+.main .from .bd{
+	margin-top: 5rem;
+	position: relative;
+}
+.main .from .bd input{
+	width: 20rem;
+	height: 3rem;
+	position: absolute;
+	margin-left: -10rem;
+	outline:none;
+	padding-top: 1rem;
+	padding-left: 0.8rem;
+	border: none;
+}
+.main .from .bd label{
+	position: absolute;
+}
+.main .from .bd .label_input_user{
+	margin-top: -1rem;
+	margin-left: -9rem;
+}
+.main .from .bd .label_input_pwd{
+	margin-left: -9rem;
+	margin-top: 3rem;
+}
+.main .from .bd .input_user{
+	top: -2rem;
+}
+.main .from .bd .input_pwd{
+	top: 4rem;
+	padding-left: 0.8rem;
+}
+.main .from .bd input:focus{
+	border: 0.2rem solid #000;
+}
+.main .from .bd .input_user:focus+.label_input_user{
+	font-size: 1.2rem;
+	animation: input_1 1s forwards;
+	-moz-animation: input_1 1s forwards;	/* Firefox */
+	-webkit-animation: input_1 1s forwards;	/* Safari 和 Chrome */
+	-o-animation: input_1 1s forwards;	/* Opera */
+	font-weight: bolder;
+}
+.main .from .bd .input_pwd:focus+.pwd{
+	font-size: 1.2rem;
+	animation: input_1 1s forwards;
+	-moz-animation: input_1 1s forwards;	/* Firefox */
+	-webkit-animation: input_1 1s forwards;	/* Safari 和 Chrome */
+	-o-animation: input_1 1s forwards;	/* Opera */
+	font-weight: bolder;
+}
+.main .from .bd #login{
+	width: 8rem;
+	height: 8rem;
+	margin-left: -4rem;
+	top: 12rem;
+	border: 0.1rem solid #ccc;
+	border-radius: 1.5rem;
+	cursor: pointer;
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: 60% 60%;
+	-moz-background-size:60% 60%;
+	-webkit-background-size: 60% 60%;
+	-o-background-size: 60% 60%;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg t='1574757167622' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='982' xmlns:xlink='http://www.w3.org/1999/xlink' width='200' height='200'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C/style%3E%3C/defs%3E%3Cpath d='M473.9 896.5c0-9 3.4-17.9 10.3-24.7L843.9 512 484.1 152.2c-13.7-13.7-13.7-35.8 0-49.5 13.7-13.7 35.8-13.7 49.5 0l384.5 384.5c13.7 13.7 13.7 35.8 0 49.5L533.6 921.3c-13.7 13.7-35.8 13.7-49.5 0-6.8-6.9-10.2-15.8-10.2-24.8z' p-id='983'%3E%3C/path%3E%3Cpath d='M95.6 512c0-19.3 15.7-35 35-35h762.7c19.3 0 35 15.7 35 35s-15.7 35-35 35H130.6c-19.3 0-35-15.7-35-35z' p-id='984'%3E%3C/path%3E%3C/svg%3E");
+}
+.main .from .bottom{
+	position: relative;
+	left: 0.6rem;
+	top: 20rem;
+}
+@-webkit-keyframes input_1 {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(1em,0,0);
+		transform: translate3d(1em,0,0)
+	}
+
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-1em,-40%,0);
+		transform: translate3d(-1em,-40%,0)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0,-40%,0);
+		transform: translate3d(0,-40%,0)
+	}
+}
+
+@keyframes input_1 {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(1em,0,0);
+		transform: translate3d(1em,0,0)
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-1em,-40%,0);
+		transform: translate3d(-1em,-40%,0)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0,-40%,0);
+		transform: translate3d(0,-40%,0)
+	}
